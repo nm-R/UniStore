@@ -3,9 +3,11 @@
 }
 /* Css SideNav */
 
+
+
 .sidenav-container {
   height: 100vh;
-  overflow-x: hidden;
+  
 }
 
 .sidenav {
@@ -25,6 +27,8 @@
   min-height: 72px;
   border-radius: 0px 0px 15px 0px;
   padding-right: 0px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 
