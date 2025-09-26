@@ -1,5 +1,14 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav mode="side" [opened]="isopen" class="sidenav">
+<mat-sidenav-container class="sidenav-container"> 
+  
+  <mat-sidenav #drawer mode="over" 
+              [opened]="isopen"
+              (backdropClick)="togglenav()"
+              class="sidenav">
+              <div class="close-button-wrapper" *ngIf="isopen">
+              <button class="close-sidenav-button" (click)="togglenav()">
+              <mat-icon>close</mat-icon>
+              </button>
+              </div>
     <!-- header sidenav (user) -->
      <div class="sidenav-header">
       <mat-icon class="avatar-icon">account_circle</mat-icon>
@@ -12,7 +21,15 @@
     </div>
 
 
-  <!-- botoes para paginas -->
+
+    <!-- Menu tittle -->
+    
+    <div class="sidenav-menu-container"> 
+      <span class="sidenav-menu-tittle">Menu</span>
+    </div>
+    <mat-divider></mat-divider>
+
+    <!-- botoes para paginas -->
    <div class="nav-buttons">  
       <button mat-button 
               class="nav-button"
@@ -31,15 +48,15 @@
    </div>
   </mat-sidenav>
 
-
+<!-- Conteudo principal -->
   <mat-sidenav-content>
     <mat-toolbar class="toolbar-custom">
-  <button matIconButton class="example-icon" (click)="togglenav()">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>UniStore</span>
-  <span class="example-spacer"></span>
-</mat-toolbar>
+      <button mat-icon-button class="example-icon" (click)="togglenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>UniStore</span>
+      <span class="example-spacer"></span>
+    </mat-toolbar>
 <router-outlet />
   </mat-sidenav-content>
 </mat-sidenav-container>

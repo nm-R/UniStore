@@ -10,6 +10,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 
 
+
 @NgModule({
   declarations: [
     App,
@@ -22,7 +23,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+   
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
