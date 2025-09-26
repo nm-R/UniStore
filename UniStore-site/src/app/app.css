@@ -1,0 +1,84 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 280px;
+}
+
+.sidenav-header {
+  padding: 20px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.user-info p {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 16px;
+}
+
+.content {
+  padding: 20px;
+  min-height: calc(100vh - 64px);
+  background-color: #f5f5f5;
+}
+
+.example-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.example-content h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.example-card {
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sidenav {
+    width: 100vw;
+  }
+  
+  .toolbar-title {
+    font-size: 18px;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+}
