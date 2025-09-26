@@ -1,9 +1,43 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav mode="side" opened="{{isopen}}" class="sidenav">
-     <div></div>
-
-    <mat-divider></mat-divider>
+    <!-- header sidenav (user) -->
+     <div class="sidenav-header">
+      <mat-icon class="avatar-icon">account_circle</mat-icon>
+      <div class="user-info">
+      <h3>User Ex</h3>
+      </div>
+      <button mat-icon-button class="config-button" aria-label="Configurações">
+        <mat-icon>settings</mat-icon>
+      </button>
+    </div>
     <span class="example-spacer"></span>
+
+
+  <!-- botoes para paginas -->
+   <div class="nav-buttons">  
+      <button mat-button 
+              class="nav-button"
+              [class.active]="isActiveRoute('loja/unistore')"
+              (click)="navigateTo('loja/unistore')">
+        <mat-icon>shopping_bag</mat-icon>
+        <span>Loja</span>
+      </button>
+            <button mat-button 
+              class="nav-button"
+              [class.active]="isActiveRoute('carrinho/MeuCarrinho')"
+              (click)="navigateTo('carrinho/MeuCarrinho')">
+        <mat-icon>shopping_cart</mat-icon>
+        <span>Carrinho</span>
+      </button>
+   </div>
+
+
+
+
+
+
+
+
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar>

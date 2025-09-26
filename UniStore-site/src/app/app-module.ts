@@ -7,10 +7,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
-    App
+    App,
+
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
