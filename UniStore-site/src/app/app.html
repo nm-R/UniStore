@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav mode="side" opened="{{isopen}}" class="sidenav">
+  <mat-sidenav mode="side" [opened]="isopen" class="sidenav">
     <!-- header sidenav (user) -->
      <div class="sidenav-header">
       <mat-icon class="avatar-icon">account_circle</mat-icon>
@@ -39,8 +39,10 @@
 
 
   </mat-sidenav>
+
+
   <mat-sidenav-content>
-    <mat-toolbar>
+    <mat-toolbar class="toolbar-custom">
   <button matIconButton class="example-icon" (click)="togglenav()">
     <mat-icon>menu</mat-icon>
   </button>

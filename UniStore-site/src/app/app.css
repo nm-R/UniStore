@@ -5,11 +5,15 @@
 
 .sidenav-container {
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .sidenav {
   width: 280px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  
 }
+
 
 .sidenav-header {
   background: #202A44;
@@ -19,6 +23,8 @@
   align-items: center;
   gap: 5px;
   min-height: 72px;
+  border-radius: 0px 0px 15px 0px;
+  padding-right: 0px;
 }
 
 
@@ -61,6 +67,10 @@
   font-size: 20px;
   font-weight: 500;
   margin-left: 16px;
+}
+.toolbar-custom{
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 /* Css dos conteudos */
 .content {
@@ -119,6 +129,7 @@
   font-size: 14px !important;
   font-weight: 500 !important;
   text-transform: none !important;
+  box-sizing: border-box;
 }
 
 .nav-button mat-icon {
